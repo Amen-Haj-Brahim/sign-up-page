@@ -29,29 +29,29 @@ export default function App() {
   }
 
   function Login() {
-    //SetCredentials()
-    // if (FullName == "") {
-    //   SetFullNameError('Full Name not valid')
-    // }
-    // if (Email == "") {
-    //   SetEmailError('Email not valid')
-    // }
-    // if (BirthDate == "") {
-    //   SetBirthDateError('Birth Date not valid')
-    // }
-    // if (Address == "") {
-    //   SetAddressError('Address not valid')
-    // }
-    // if (Password == "") {
-    //   SetPasswordError('Password not valid')
-    // }
-    // if (Confirm != Password) {
-    //   SetConfirmError("Confirmed Password doesn't match Password")
-    // }
-    // else {
-    //   SetWelcome("Welcome " + FullName)
-    //   SetCredentials(<Credentials Email={Email} />)
-    // }
+    SetCredentials()
+    if (FullName == "") {
+      SetFullNameError('Full Name not valid')
+    }
+    if (Email == "") {
+      SetEmailError('Email not valid')
+    }
+    if (BirthDate == "") {
+      SetBirthDateError('Birth Date not valid')
+    }
+    if (Address == "") {
+      SetAddressError('Address not valid')
+    }
+    if (Password == "") {
+      SetPasswordError('Password not valid')
+    }
+    if (Confirm != Password) {
+      SetConfirmError("Confirmed Password doesn't match Password")
+    }
+    else {
+      SetWelcome("Welcome " + FullName)
+      SetCredentials("Name: " + FullName + "\nEmail: " + Email + "\nAddress: " + Address + "\nBirth Date: " + BirthDate)
+    }
   }
   return (
     < View style={styles.container} >
